@@ -79,23 +79,23 @@ body {
         padding: 15px 20px 20px;
         background: rgba($color_black, 0.1);
         border-radius: 5px;
-
+        pre {
+            white-space: pre-line;
+        }
         .title {
             font-size: 14px;
             text-align: center;
             color: rgba($color_black, 0.6);
             margin-bottom: 0.5em;
         }
-        .css {
-            div {
-                margin-left: 1em;
-                span {
-                    padding-left: 0.5em;
-                }
-                &.property {
-                    display: block;
-                    margin-left: 0em;
-                }
+        div {
+            margin-left: 1em;
+            span {
+                padding-left: 0.5em;
+            }
+            &.property {
+                display: block;
+                margin-left: 0em;
             }
         }
     }
