@@ -25,8 +25,8 @@ function Heading01() {
     $(wrap).find('.Heading_txt').css('color', color);
     $(wrap).find('.Heading_txt span').eq(0).css('background-color', line_color);
     $(wrap).find('.Heading_txt span').eq(2).css('background-color', line_color);
-    $(wrap).find('.Heading_txt span').eq(0).css('border-radius', line_radius + 'em');
-    $(wrap).find('.Heading_txt span').eq(2).css('border-radius', line_radius + 'em');
+    $(wrap).find('.Heading_txt span').eq(0).css('border-radius', line_radius + 'px');
+    $(wrap).find('.Heading_txt span').eq(2).css('border-radius', line_radius + 'px');
 
 
     $(wrap).find('.value_width').text(width);
