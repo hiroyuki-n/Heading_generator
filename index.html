@@ -13,16 +13,17 @@
 	<div class="wrap Heading01">
 		<div class="generator">
 			<div class="generator_area">
+				<p>全体</p>
 				<div class="item">
 					<div>テキスト</div>
-					<input type="text" class="heading_input" value="見出しテキスト">
+					<input type="text" class="heading_input" value="見出しテキスト" oninput="Heading01()">
 				</div>
-
 				<div class="item">
 					<div>横幅:<span class="value_width">300</span>px;</div>
 					<input type="range" class="width" min="100" max="1000" step="10" value="300" oninput="Heading01()">
 				</div>
-				<hr>
+			</div>
+			<div class="generator_area">
 				<p>文字</p>
 				<div class="item">
 					<div>サイズ:<span class="value_font_size">16</span>px;</div>
@@ -42,9 +43,9 @@
 					<div>カラー:<span class="value_color">#333333</span>;</div>
 					<input type="color" class="color" value="#333333" oninput="Heading01()">
 				</div>
-
+			</div>
+			<div class="generator_area">
 				<p>装飾</p>
-
 				<div class="item">
 					<div>余白:<span class="value_margin">1</span>em;</div>
 					<input type="range" class="margin" min="0" max="5" step="0.1" value="1" oninput="Heading01()">
@@ -59,60 +60,60 @@
 				</div>
 				<div class="item">
 					<div>線の位置</div>
-					<input class="align_items" type="radio" name="align_items" id="flex-start" value="flex-start">
+					<input class="align_items" type="radio" name="align_items" id="flex-start" value="flex-start"
+						oninput="Heading01()">
 					<label for="flex-start">トップ</label>
-					<input class="align_items" type="radio" name="align_items" id="center" value="center" checked>
+					<input class="align_items" type="radio" name="align_items" id="center" value="center" checked
+						oninput="Heading01()">
 					<label for="center">センター</label>
-					<input class="align_items" type="radio" name="align_items" id="flex-end" value="flex-end">
+					<input class="align_items" type="radio" name="align_items" id="flex-end" value="flex-end"
+						oninput="Heading01()">
 					<label for="flex-end">ボトム</label>
 				</div>
 				<div class="item">
 					<div>カラー:<span class="value_line_color">#aaaaaa</span>;</div>
 					<input type="color" class="line_color" value="#aaaaaa" oninput="Heading01()">
 				</div>
-
 			</div>
-			<div class="title">htmlコード</div>
 			<div class="code_area">
-				<pre><code><math><![CDATA[<div class="Heading_txt"><span>]]></math></code><span class="value_heading">見出しテキスト</span><code><math><![CDATA[</span></div>]]></math></code></pre>
+				<div class="title">html</div>
+				<div class="txt_box">
+					<pre><code><math><![CDATA[<div class="Heading_txt"><span>]]></math></code><span class="value_heading">見出しテキスト</span><code><math><![CDATA[</span></div>]]></math></code></pre>
+				</div>
+				<div class="title">css</div>
+				<div class="txt_box">
+					<!--  -->
+					<div class="property">.Heading_txt {</div>
+					<div>width:<span class="value_width">300</span>px;</div>
+					<div>display: flex;</div>
+					<div>align-items:<span class="value_align_items">center</span>;</div>
+					<div>margin: auto;</div>
+					<div>font-size:<span class="value_font_size">16</span>px;</div>
+					<div>letter-spacing:<span class="value_letter_spacing">0</span>em;</div>
+					<div>font-weight:<span class="value_font_weight">400</span>;</div>
+					<div>color:<span class="value_color">#333333</span>;</div>
+					<div class="property">}</div>
+					<!--  -->
+					<div class="property">.Heading_txt span{</div>
+					<div>padding-left:<span class="value_letter_spacing">0</span>em;</div>
+					<div>margin-left:<span class="value_margin">1</span>em;</div>
+					<div>margin-right:<span class="value_margin">1</span>em;</div>
+					<div class="property">}</div>
+					<!--  -->
+					<div class="property">.Heading_txt:before,</div>
+					<div class="property">.Heading_txt:after {</div>
+					<div>content: "";</div>
+					<div>display: block;</div>
+					<div>flex: auto;</div>
+					<div>height:<span class="value_line_weight">1</span>px;</div>
+					<div>border-radius:<span class="value_line_radius">0</span>px;</div>
+					<div>background:<span class="value_line_color">#aaaaaa</span>;</div>
+					<div class="property">}</div>
+					<!--  -->
+
+				</div>
 			</div>
-
-
-			<div class="title">cssコード</div>
-			<div class="code_area">
-				<!--  -->
-				<div class="property">.Heading_txt {</div>
-				<div>width:<span class="value_width">300</span>px;</div>
-				<div>display: flex;</div>
-				<div>align-items:<span class="value_align_items">center</span>;</div>
-				<div>margin: auto;</div>
-				<div>font-size:<span class="value_font_size">16</span>px;</div>
-				<div>letter-spacing:<span class="value_letter_spacing">0</span>em;</div>
-				<div>font-weight:<span class="value_font_weight">400</span>;</div>
-				<div>color:<span class="value_color">#333333</span>;</div>
-				<div class="property">}</div>
-				<!--  -->
-				<div class="property">.Heading_txt span{</div>
-				<div>padding-left:<span class="value_letter_spacing">0</span>em;</div>
-				<div>margin-left:<span class="value_margin">1</span>em;</div>
-				<div>margin-right:<span class="value_margin">1</span>em;</div>
-				<div class="property">}</div>
-				<!--  -->
-				<div class="property">.Heading_txt:before,</div>
-				<div class="property">.Heading_txt:after {</div>
-				<div>content: "";</div>
-				<div>display: block;</div>
-				<div>flex: auto;</div>
-				<div>height:<span class="value_line_weight">1</span>px;</div>
-				<div>border-radius:<span class="value_line_radius">0</span>px;</div>
-				<div>background:<span class="value_line_color">#aaaaaa</span>;</div>
-				<div class="property">}</div>
-				<!--  -->
-
-			</div>
-
 		</div>
-
 		<div class="result">
 			<div class="Heading_txt"><span></span><span class="value_heading">見出しテキスト</span><span></span></div>
 		</div>

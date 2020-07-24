@@ -32,7 +32,7 @@ body {
     color: $color_black;
     background: $color_white;
     font-family: "Noto Sans JP", sans-serif;
-    padding: 20px 10px;
+    padding: 40px;
 
     a {
         color: $color_black;
@@ -52,20 +52,38 @@ body {
 .wrap {
     display: flex;
     position: relative;
-}
-.generator {
-    width: 400px;
     padding: 20px;
-    margin-right: 10px;
     border: solid 1px rgba($color_black, 0.4);
     border-radius: 5px;
+}
+.generator {
+    width: 300px;
+    padding-right: 20px;
+    margin-right: 10px;
+
     .generator_area {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        border: solid 1px rgba($color_black, 0.4);
+        border-radius: 5px;
+        overflow: hidden;
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            padding: 10px;
+            border-bottom: solid 1px rgba($color_black, 0.4);
+            background: rgba($color_black, 0.1);
+        }
         .item {
             margin-bottom: 15px;
+            padding: 0 20px;
+
             div {
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: bold;
                 span {
                     padding-left: 0.3em;
@@ -74,28 +92,33 @@ body {
         }
     }
     .code_area {
-        font-size: 13px;
         width: 100%;
-        padding: 15px 20px 20px;
+        padding: 20px;
         background: rgba($color_black, 0.1);
         border-radius: 5px;
-        pre {
-            white-space: pre-line;
-        }
         .title {
             font-size: 14px;
-            text-align: center;
             color: rgba($color_black, 0.6);
             margin-bottom: 0.5em;
         }
-        div {
-            margin-left: 1em;
-            span {
-                padding-left: 0.5em;
+        .txt_box {
+            font-size: 13px;
+            background: $color_white;
+            padding: 1em;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            pre {
+                white-space: pre-line;
             }
-            &.property {
-                display: block;
-                margin-left: 0em;
+            div {
+                margin-left: 1em;
+                &.property {
+                    display: block;
+                    margin-left: 0em;
+                }
+                span {
+                    padding-left: 0.5em;
+                }
             }
         }
     }
@@ -142,7 +165,7 @@ body {
 }
 
 input[type="color"] {
-    width: 180px;
+    width: 100%;
     height: 40px;
     border: none;
     margin-top: 5px;
@@ -202,6 +225,6 @@ input[type="text"] {
     background: $color_white;
     border-radius: 5px;
     padding: 0.5em;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 0.4em;
 }
