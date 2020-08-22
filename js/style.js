@@ -18,19 +18,12 @@ function font_weight(wrap) {
     $(wrap).find('.value_font_weight').text(val);
 }
 
-
-
 function Heading01() {
-
-
     const wrap = '.Heading01';
-
     heading_text(wrap);
     width(wrap);
     font_size(wrap);
     font_weight(wrap);
-
-
     const margin = $(wrap).find('.margin').val();
 
     const line_weight = $(wrap).find('.line_weight').val();
@@ -51,18 +44,12 @@ function Heading01() {
     $(wrap).find('.Heading_txt span').eq(0).css('border-radius', line_radius + 'px');
     $(wrap).find('.Heading_txt span').eq(2).css('border-radius', line_radius + 'px');
 
-
     $(wrap).find('.value_margin').text(margin);
     $(wrap).find('.value_line_weight').text(line_weight);
     $(wrap).find('.value_letter_spacing').text(letter_spacing);
     $(wrap).find('.value_color').text(color);
     $(wrap).find('.value_line_color').text(line_color);
     $(wrap).find('.value_line_radius').text(line_radius);
-
-
-
-
-
 
     const align_items = $(wrap).find('input:radio:checked').val();
     $(wrap).find('.Heading_txt').css('align-items', align_items);
